@@ -1,0 +1,420 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OpalCelik.master.cs" Inherits="OpalCelik.OpalCelik" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="description" content="">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+
+    <!-- PAGE TITLE HERE -->
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- [if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+	<![endif] -->
+
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
+
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css">
+
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+
+    <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">
+
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Color Theme Change Css -->
+    <link rel="stylesheet" class="skin" type="text/css" href="css/skin/skin-1.css">
+
+
+
+    <!-- Side Switcher Css-->
+    <link rel="stylesheet" type="text/css" href="css/switcher.css">
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
+
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
+
+    <!-- Google Fonts -->
+    <link href="../css.css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="../css-1.css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="page-wraper">
+        <!-- HEADER START -->
+        <header class="site-header header-style-1">
+            <div class="top-bar bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-topbar-left clearfix">
+                            <ul class="list-unstyled e-p-bx pull-right">
+                                <li><i class="fa fa-envelope"></i>info@opalcelik.com</li>
+                                <li><i class="fa fa-phone"></i>(+90) 212 659 19 52-55</li>
+                                <li><i class="fa fa-clock-o"></i>Ptesi-Ctesi 8:30/18:30</li>
+                            </ul>
+                        </div>
+                        <div class="mt-topbar-right clearfix">
+                            <div class="appint-btn"><a href="#" class="site-button" style="color: white">BİZE ULAŞIN</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-header main-bar-wraper">
+                <div class="main-bar bg-white">
+                    <div class="container">
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="Default.aspx">
+                                    <img src="images/TR_Logo.png" alt="" style="max-width: 130%">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- NAV Toggle Button -->
+                        <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- ETRA Nav -->
+                        <div class="extra-nav">
+                            <div class="extra-cell">
+                                <a href="#" class="contact-slide-show"><i class="fa fa-angle-left arrow-animation"></i></a>
+                            </div>
+                        </div>
+                        <!-- ETRA Nav -->
+
+                        <!-- Contact Nav -->
+                        <div class="contact-slide-hide " style="background-image: url(images/background/bg-5.png)">
+                            <div class="contact-nav">
+                                <a href="javascript:void(0)" class="contact_close">&times;</a>
+                                <div class="contact-nav-form p-a30">
+                                    <div class="contact-info   m-b30">
+                                        <div class="full-social-bg m-b30">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/opalcelik/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://www.instagram.com/opal.celik/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="https://tr.linkedin.com/company/opal-%C3%A7elik" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="https://twitter.com/opalcelik" class="twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCwDdFKkl8UWiZ4gI1RPiyrw" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mt-icon-box-wraper center p-b30">
+                                            <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-phone"></i></div>
+                                            <div class="icon-content">
+                                                <h5 class="m-t0 font-weight-500">Ofis</h5>
+                                                <p>+90 (212) 659 19 52 - 55</p>
+                                                <h5 class="m-t0 font-weight-500">Turkish - English</h5>
+                                                <p>+90 (549) 792 52 61</p>
+                                                <h5 class="m-t0 font-weight-500">Arabic</h5>
+                                                <p>+90 (552) 545 62 45</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-icon-box-wraper center p-b30">
+                                            <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-envelope"></i></div>
+                                            <div class="icon-content">
+                                                <h5 class="m-t0 font-weight-500">Email Adres</h5>
+                                                <p><a href="mailto:info@opalcelik.com" target="_blank">info@opalcelik.com</a></p>
+                                                <p><a href="mailto:opalinsaat@gmail.com" target="_blank">opalinsaat@gmail.com</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-icon-box-wraper center p-b30">
+                                            <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-map-marker"></i></div>
+                                            <div class="icon-content">
+                                                <h5 class="m-t0 font-weight-500">Merkez Ofis</h5>
+
+                                                <p>Mall Of İstanbul Ofis KAT: 15 OFİS NO : 120 BAŞAKŞEHİR/İSTANBUL</p>
+
+
+                                                <h5 class="m-t0 font-weight-500">Fabrika</h5>
+                                                <p>SAKARYA 3.ORGANİZE SAN. BÖL. SÖĞÜTLÜ SAKARYA / TÜRKİYE</p>
+                                                <h5 class="m-t0 font-weight-500">Almanya Ofis</h5>
+                                                <p>
+                                                    Kavy GmbH, Obersayn 14, 56459 Rothenbach Geschäftsführer: M.<br />
+                                                    Sevban Güclü Amtsgericht Montabaur HRB 25574 Ust Id: 267786485
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <h6 class="font-weight-600">&copy;  2021 OPAL ÇELİK KONSTRÜKSİYON</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MAIN Vav -->
+                        <div class="header-nav navbar-collapse collapse">
+                            <ul class=" nav navbar-nav">
+                                <li class="active">
+                                    <a href="Default.aspx">ANASAYFA</a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;">KURUMSAL</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
+                                        <li><a href="UretimTesisi.aspx">Üretim Tesisimiz</a></li>
+                                        <li><a href="Sertifikalar.aspx">Sertifikalarımız</a></li>
+                                        <li><a href="https://www.opalcelik.com/wp-content/OpalCelikKatalog-17_10_2020-min.pdf" target="_blank">Katalog</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="Projeler.aspx?categoryID=0">PROJELERİMİZ</a>
+
+                                    <ul class="mega-menu" style="position: fixed; text-align:center">
+                                        <li>
+                                            <ul>
+                                                <asp:Label ID="lblProje" runat="server" Text=""></asp:Label>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <asp:Label ID="lblProje2" runat="server" Text=""></asp:Label>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <asp:Label ID="lblProje3" runat="server" Text=""></asp:Label>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <asp:Label ID="lblProje4" runat="server" Text=""></asp:Label>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="referanslar.aspx">REFERANSLAR</a>
+                                </li>
+                                <li>
+                                    <a href="iletisim.aspx">İLETİŞİM</a>
+                                </li>
+                                <li class="submenu-direction">
+                                    <a href="javascript:;"><span class="fa fa-globe relative" style="font-size: 18px"></span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="accordian.html">
+                                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeT0iODUuMzM3IiBzdHlsZT0iZmlsbDojRDgwMDI3OyIgd2lkdGg9IjUxMiIgaGVpZ2h0PSIzNDEuMzI2Ii8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojRjBGMEYwOyIgcG9pbnRzPSIyNDcuMjEzLDIxNi43ODcgMjY0LjgwNywyNDEuMDMzIDI5My4zLDIzMS43OTQgMjc1LjY3OSwyNTYuMDE4IDI5My4yNzEsMjgwLjI2MiANCgkJMjY0Ljc4NywyNzAuOTg4IDI0Ny4xNjYsMjk1LjIxMyAyNDcuMTg0LDI2NS4yNTggMjE4LjcsMjU1Ljk4MyAyNDcuMTk0LDI0Ni43NDQgCSIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGMEYwRjA7IiBkPSJNMTk5LjIwMiwzMTYuNjAyYy0zMy40NjksMC02MC42MDItMjcuMTMzLTYwLjYwMi02MC42MDJzMjcuMTMzLTYwLjYwMiw2MC42MDItNjAuNjAyDQoJCWMxMC40MzYsMCwyMC4yNTQsMi42MzksMjguODI3LDcuMjg0Yy0xMy40NDgtMTMuMTUyLTMxLjg0LTIxLjI2OS01Mi4xMzUtMjEuMjY5Yy00MS4xOTMsMC03NC41ODYsMzMuMzk0LTc0LjU4Niw3NC41ODYNCgkJczMzLjM5NCw3NC41ODYsNzQuNTg2LDc0LjU4NmMyMC4yOTUsMCwzOC42ODctOC4xMTcsNTIuMTM1LTIxLjI2OUMyMTkuNDU3LDMxMy45NjMsMjA5LjYzOCwzMTYuNjAyLDE5OS4yMDIsMzE2LjYwMnoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" style="width: 10%" />
+                                            Türkçe</a></li>
+                                        <li><a href="button.html">
+                                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeT0iODUuMzMzIiBzdHlsZT0iZmlsbDojRjBGMEYwOyIgd2lkdGg9IjUxMiIgaGVpZ2h0PSIzNDEuMzM3Ii8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDgwMDI3OyIgcG9pbnRzPSIyODgsODUuMzMgMjI0LDg1LjMzIDIyNCwyMjMuOTk2IDAsMjIzLjk5NiAwLDI4Ny45OTYgMjI0LDI4Ny45OTYgMjI0LDQyNi42NjIgMjg4LDQyNi42NjIgDQoJMjg4LDI4Ny45OTYgNTEyLDI4Ny45OTYgNTEyLDIyMy45OTYgMjg4LDIyMy45OTYgIi8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMDA1MkI0OyIgcG9pbnRzPSIzOTMuNzg1LDMxNS4zNTggNTEyLDM4MS4wMzQgNTEyLDMxNS4zNTggCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMwMDUyQjQ7IiBwb2ludHM9IjMxMS42NTIsMzE1LjM1OCA1MTIsNDI2LjY2MiA1MTIsMzk1LjE4OCAzNjguMzA3LDMxNS4zNTggCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMwMDUyQjQ7IiBwb2ludHM9IjQ1OC42MzQsNDI2LjY2MiAzMTEuNjUyLDM0NC45OTggMzExLjY1Miw0MjYuNjYyIAkiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGMEYwRjA7IiBwb2ludHM9IjMxMS42NTIsMzE1LjM1OCA1MTIsNDI2LjY2MiA1MTIsMzk1LjE4OCAzNjguMzA3LDMxNS4zNTggIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDgwMDI3OyIgcG9pbnRzPSIzMTEuNjUyLDMxNS4zNTggNTEyLDQyNi42NjIgNTEyLDM5NS4xODggMzY4LjMwNywzMTUuMzU4ICIvPg0KPGc+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iOTAuMzQxLDMxNS4zNTYgMCwzNjUuNTQ2IDAsMzE1LjM1NiAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iMjAwLjM0OCwzMjkuNTEgMjAwLjM0OCw0MjYuNjYxIDI1LjQ5MSw0MjYuNjYxIAkiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNEODAwMjc7IiBwb2ludHM9IjE0My42OTMsMzE1LjM1OCAwLDM5NS4xODggMCw0MjYuNjYyIDAsNDI2LjY2MiAyMDAuMzQ4LDMxNS4zNTggIi8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMDA1MkI0OyIgcG9pbnRzPSIxMTguMjE1LDE5Ni42MzQgMCwxMzAuOTU4IDAsMTk2LjYzNCAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iMjAwLjM0OCwxOTYuNjM0IDAsODUuMzMgMCwxMTYuODA0IDE0My42OTMsMTk2LjYzNCAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iNTMuMzY2LDg1LjMzIDIwMC4zNDgsMTY2Ljk5NCAyMDAuMzQ4LDg1LjMzIAkiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGMEYwRjA7IiBwb2ludHM9IjIwMC4zNDgsMTk2LjYzNCAwLDg1LjMzIDAsMTE2LjgwNCAxNDMuNjkzLDE5Ni42MzQgIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDgwMDI3OyIgcG9pbnRzPSIyMDAuMzQ4LDE5Ni42MzQgMCw4NS4zMyAwLDExNi44MDQgMTQzLjY5MywxOTYuNjM0ICIvPg0KPGc+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iNDIxLjY1OSwxOTYuNjM2IDUxMiwxNDYuNDQ2IDUxMiwxOTYuNjM2IAkiLz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMDA1MkI0OyIgcG9pbnRzPSIzMTEuNjUyLDE4Mi40ODIgMzExLjY1Miw4NS4zMzEgNDg2LjUwOSw4NS4zMzEgCSIvPg0KPC9nPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0Q4MDAyNzsiIHBvaW50cz0iMzY4LjMwNywxOTYuNjM0IDUxMiwxMTYuODA0IDUxMiw4NS4zMyA1MTIsODUuMzMgMzExLjY1MiwxOTYuNjM0ICIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" style="width: 10%" />
+                                            English</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <asp:ContentPlaceHolder ID="cphOrtaAlan" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- FOOTER START -->
+
+        <footer class="site-footer footer-large  footer-dark	footer-wide">
+            <!-- FOOTER BLOCKES START -->
+            <!-- <div class="footer-top overlay-wraper"> -->
+            <!-- <div class="overlay-main"></div> -->
+            <!-- <div class="container"> -->
+            <!-- <div class="row"> -->
+            <!-- <!-- ABOUT COMPANY -->
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6">   -->
+            <!-- <div class="widget widget_about"> -->
+            <!-- <!--<h4 class="widget-title">About Company</h4>-->
+
+            <!-- <div class="logo-footer clearfix p-b15"> -->
+            <!-- <a href="index.html"><img src="images/TR_Logo.png" alt=""></a> -->
+            <!-- </div> -->
+            <!-- <p class="max-w400">Today we can tell you, thanks to your passion, hard work creativity, and expertise, you delivered us the most beautiful house great looks.</p>                                 -->
+
+            <!-- <ul class="social-icons  mt-social-links" > -->
+            <!-- <li><a href="javascript:void(0);" class="fa fa-google" style="color:white"></a></li> -->
+            <!-- <li><a href="javascript:void(0);" class="fa fa-rss" style="color:white"></a></li> -->
+            <!-- <li><a href="javascript:void(0);" class="fa fa-facebook" style="color:white"></a></li> -->
+            <!-- <li><a href="javascript:void(0);" class="fa fa-twitter" style="color:white"></a></li> -->
+            <!-- <li><a href="javascript:void(0);" class="fa fa-linkedin" style="color:white"></a></li> -->
+            <!-- </ul>                                      -->
+            <!-- </div> -->
+            <!-- </div>  -->
+
+            <!-- <!-- RESENT POST -->
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6"> -->
+            <!-- <div class="widget widget_address_outer"> -->
+            <!-- <h4 class="widget-title">Contact Us</h4> -->
+            <!-- <ul class="widget_address"> -->
+            <!-- <li>34/7 Liverpool Street, Suite 636, London, United Kingdom</li> -->
+            <!-- <li>7xthemedemo@gmail.com</li> -->
+            <!-- <li>(+298) 012-3456-789</li> -->
+            <!-- <li>(+298) 146-6543-480</li> -->
+            <!-- </ul> -->
+
+            <!-- </div>                                              	 -->
+            <!-- </div>                           -->
+
+            <!-- <!-- USEFUL LINKS -->
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3"> -->
+            <!-- <div class="widget widget_services inline-links"> -->
+            <!-- <h4 class="widget-title">Useful links</h4> -->
+            <!-- <ul> -->
+            <!-- <li><a href="about-1.html">About</a></li> -->
+            <!-- <li><a href="project-grid.html">Projects</a></li> -->
+            <!-- <li><a href="blog-grid.html">Blog</a></li> -->
+            <!-- <li><a href="contact-1.html">Contact Us</a></li> -->
+            <!-- </ul> -->
+            <!-- </div>                            -->
+            <!-- </div> -->
+
+            <!-- <!-- TAGS -->
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6"> -->
+            <!-- <div class="widget recent-posts-entry-date"> -->
+            <!-- <h4 class="widget-title">Resent Post</h4> -->
+            <!-- <div class="widget-post-bx"> -->
+            <!-- <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10"> -->
+            <!-- <div class="mt-post-date text-center text-uppercase text-white p-tb5"> -->
+            <!-- <strong class="p-date">24</strong> -->
+            <!-- <span class="p-month">April</span> -->
+            <!-- <span class="p-year">2019</span> -->
+            <!-- </div> -->
+            <!-- <div class="mt-post-info"> -->
+            <!-- <div class="mt-post-header"> -->
+            <!-- <h6 class="post-title"><a href="blog-single.html">On these beams, we’re building dreams.</a></h6> -->
+            <!-- </div> -->
+            <!-- <div class="mt-post-meta"> -->
+            <!-- <ul> -->
+            <!-- <li class="post-author"><i class="fa fa-user"></i>By Admin</li> -->
+            <!-- <li class="post-comment"><i class="fa fa-comments"></i> 28</li> -->
+            <!-- </ul> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10"> -->
+            <!-- <div class="mt-post-date text-center text-uppercase text-white p-tb5"> -->
+            <!-- <strong class="p-date">30</strong> -->
+            <!-- <span class="p-month">May</span> -->
+            <!-- <span class="p-year">2019</span> -->
+            <!-- </div> -->
+            <!-- <div class="mt-post-info"> -->
+            <!-- <div class="mt-post-header"> -->
+            <!-- <h6 class="post-title"><a href="blog-single.html">We’ll be a sensation for you next renovation</a></h6> -->
+            <!-- </div> -->
+            <!-- <div class="mt-post-meta"> -->
+            <!-- <ul> -->
+            <!-- <li class="post-author"><i class="fa fa-user"></i>By Admin</li> -->
+            <!-- <li class="post-comment"><i class="fa fa-comments"></i> 29</li> -->
+            <!-- </ul> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- </div> -->
+            <!-- </div>                           -->
+            <!-- </div> -->
+            <!-- <!-- NEWSLETTER -->
+
+            <!-- </div> -->
+            <!-- </div>   -->
+            <!-- </div> -->
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-bottom overlay-wraper">
+                <div class="overlay-main"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-footer-bot-center">
+                            <span class="copyrights-text">©  2021 OPAL ÇELİK KONSTRÜKSİYON. All Rights Reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
+        <!-- BUTTON TOP START -->
+        <button class="scroltop" style="background-color: white;"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+    </div>
+
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+
+    <script src="js/magnific-popup.min.js"></script>
+    <!-- MAGNIFIC-POPUP JS -->
+
+    <script src="js/waypoints.min.js"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script>
+    <!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script>
+    <!-- COUNTERUP JS -->
+
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- MASONRY  -->
+
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- OWL  SLIDER  -->
+    <script src="js/jquery.owl-filter.js"></script>
+
+    <script src="js/stellar.min.js"></script>
+    <!-- PARALLAX BG IMAGE   -->
+
+
+
+    <script src="js/custom.js"></script>
+    <!-- CUSTOM FUCTIONS  -->
+    <script src="js/shortcode.js"></script>
+    <!-- SHORTCODE FUCTIONS  -->
+    <script src="js/jquery.bgscroll.js"></script>
+    <!-- BACKGROUND SCROLL -->
+    <script src="js/switcher.js"></script>
+    <!-- SWITCHER FUCTIONS  -->
+    <!-- REVOLUTION JS FILES -->
+
+    <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+    <!-- REVOLUTION SLIDER SCRIPT FILES -->
+    <script src="js/rev-script-1.js"></script>
+</body>
+</html>
